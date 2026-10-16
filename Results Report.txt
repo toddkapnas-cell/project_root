@@ -1,0 +1,38 @@
+Results Report:
+
+Command					Output
+./slm 2 moby_dick.txt 5			burc
+
+./slm -a 0.01 3 moby_dick.txt 40	This a would time hundren, less,ÔÇØ said
+
+./slm 2 non_existent_file.txt 20	slm: cannot open file 'non_existent_file.txt'
+
+./slm 3 moby_dick.txt 100		"tand wher, but day would he eard if his ders thour hone, was uncound, and I, ÔÇ£it in atted from hi"
+
+./slm 0 moby_dick.txt 20		k must be a positive integer.
+
+./slm 3 .\moby_dick.txt 200		"ade old wonder crettle confor soÔÇÖs gread by; fore with one, the mort of of his? Sea infatione 
+					proted	aresight because our you tell arthere in ther woods and tory spitchmethe All its of a goint
+ 					ago d"
+
+
+./slm 3 .\Gutenberg_license.txt 40 	org/ebooks/1080* A modest proposal: htt
+
+./slm 2 .\a_modest_proposal.txt 100	reen it beir cand ithe kichild ing of cies ant well equalthe inceigh tavess aliver theigue.
+					diced m
+
+./slm 4 .\a_modest_proposal.txt 200	he nation of it, and help to my country, as the confinement pain, idle, on ther county of fifthly, 
+					Then the kingdom we cautious of our
+					own attempt to perhaps been year, butchers what a person handicr
+
+./slm 5 .\a_modest_proposal.txt 200	e ready seized, and exact upon they are and
+					instruments
+					much earling per annum, rags included; and therefore and
+					maidens, not turned my thoughts, although I rather, as, is no saleable gloves for br
+
+./slm -1 .\a_modest_proposal.txt 20	k must be a positive integer.
+
+
+Comments: 
+The model for k=2,3 tries to create words but they are still actual words, but as k increases the words start to become more recognisable since it takes a larger part of letters. The sentences are still random but they are mostly constructed with words.
+Error handling seems to work for k<=0 and it returns the correct text. Same as for the case of an non existent file.
